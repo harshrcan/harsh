@@ -1,0 +1,421 @@
+<!-- menu-selection.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Selection - HiHa EXCLUSIVE DINER</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .item-size { display: none; margin-left: 1rem; }
+    .dish-item { display: flex; align-items: center; margin-bottom: 1.2rem; }
+    .dish-image { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ONE CHEF, ONE GUEST, ONE UNIQUE EXPERIENCE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chefs.html">Our Chefs</a></li>
+        <li><a href="menu-selection.html">Menu</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Choose Your Culinary Journey</h2>
+      <p>Select your chef and customize your dining experience</p>
+    </section>
+
+    <section class="menu-selection">
+      <div class="selection-step">
+        <h3>Step 1: Choose Your Chef</h3>
+        <div class="chef-selection">
+          <select id="chef-select" class="menu-select">
+            <option value="">Select a Chef</option>
+            <option value="aryan">Chef Aryan Mehta - North Indian</option>
+            <option value="riya">Chef Riya Kapoor - South Indian</option>
+            <option value="veer">Chef Veer Khurana - Mughlai</option>
+            <option value="meher">Chef Meher Singh - Coastal Seafood</option>
+            <option value="aarav">Chef Aarav Bhatia - Tandoori</option>
+            <option value="anaya">Chef Anaya Malhotra - Vegetarian</option>
+            <option value="karan">Chef Karan Nambiar - Street Food Fusion</option>
+            <option value="ishita">Chef Ishita Reddy - Hyderabadi</option>
+            <option value="dev">Chef Dev Rana - Kerala</option>
+            <option value="sanika">Chef Sanika Iyer - Punjabi Dhaba</option>
+            <option value="yash">Chef Yash Vora - Rajasthani</option>
+            <option value="tara">Chef Tara Joshi - Gujarati</option>
+            <option value="raghav">Chef Raghav Sethi - Maharashtrian</option>
+            <option value="kiara">Chef Kiara Deshmukh - Chettinad</option>
+            <option value="arjun">Chef Arjun Luthra - Awadhi</option>
+            <option value="naina">Chef Naina D'Souza - Bengali</option>
+            <option value="kabir">Chef Kabir Roy - Bihari</option>
+            <option value="avni">Chef Avni Shah - Tamil Brahmin</option>
+            <option value="siddharth">Chef Siddharth Saxena - Kashmiri</option>
+            <option value="myra">Chef Myra Chauhan - Sindhi</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="selection-step">
+        <h3>Step 2: Choose Your Dishes</h3>
+        <div class="dish-selection">
+          <div class="course-section">
+            <h4>Appetizers</h4>
+            <div class="dish-options">
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="samosa.jpeg" alt="Samosa">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="appetizer" value="samosa"> Samosa</label>
+                  <select class="item-size" data-item="samosa">
+                    <option value="regular">Regular $8.50</option>
+                    <option value="large">Large $10.50</option>
+                    <option value="extra-large">Extra Large $12.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="chicken-tikka.jpg" alt="Chicken Tikka">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="appetizer" value="chicken-tikka"> Chicken Tikka</label>
+                  <select class="item-size" data-item="chicken-tikka">
+                    <option value="regular">Regular $10.50</option>
+                    <option value="large">Large $12.50</option>
+                    <option value="extra-large">Extra Large $14.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Onion-Rings.jpg" alt="Onion Rings">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="appetizer" value="onion-rings"> Onion Rings</label>
+                  <select class="item-size" data-item="onion-rings">
+                    <option value="regular">Regular $7.50</option>
+                    <option value="large">Large $9.50</option>
+                    <option value="extra-large">Extra Large $11.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Mozzarella-Sticks.jpg" alt="Mozzarella Sticks">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="appetizer" value="mozzarella-sticks"> Mozzarella Sticks</label>
+                  <select class="item-size" data-item="mozzarella-sticks">
+                    <option value="regular">Regular $9.50</option>
+                    <option value="large">Large $11.50</option>
+                    <option value="extra-large">Extra Large $13.50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-section">
+            <h4>Main Course</h4>
+            <div class="dish-options">
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Butter chicken.jpeg" alt="Butter Chicken">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="main" value="butter-chicken"> Butter Chicken</label>
+                  <select class="item-size" data-item="butter-chicken">
+                    <option value="regular">Regular $15.50</option>
+                    <option value="large">Large $19.50</option>
+                    <option value="extra-large">Extra Large $23.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Paneer-Curry.jpg" alt="Paneer Curry">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="main" value="paneer-curry"> Paneer Curry</label>
+                  <select class="item-size" data-item="paneer-curry">
+                    <option value="regular">Regular $13.50</option>
+                    <option value="large">Large $17.50</option>
+                    <option value="extra-large">Extra Large $21.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Grilled-Chicken.jpg" alt="Grilled Chicken">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="main" value="grilled-chicken"> Grilled Chicken</label>
+                  <select class="item-size" data-item="grilled-chicken">
+                    <option value="regular">Regular $14.50</option>
+                    <option value="large">Large $18.50</option>
+                    <option value="extra-large">Extra Large $22.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="fish-chips.jpg" alt="Fish and Chips">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="main" value="fish-chips"> Fish and Chips</label>
+                  <select class="item-size" data-item="fish-chips">
+                    <option value="regular">Regular $16.50</option>
+                    <option value="large">Large $20.50</option>
+                    <option value="extra-large">Extra Large $24.50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-section">
+            <h4>Bread & Rice</h4>
+            <div class="dish-options">
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Naan.jpg" alt="Naan">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="bread" value="naan"> Naan</label>
+                  <select class="item-size" data-item="naan">
+                    <option value="regular">Regular $3.50</option>
+                    <option value="large">Large $4.50</option>
+                    <option value="extra-large">Extra Large $5.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Basmati-Rice.jpg" alt="Basmati Rice">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="bread" value="basmati-rice"> Basmati Rice</label>
+                  <select class="item-size" data-item="basmati-rice">
+                    <option value="regular">Regular $4.50</option>
+                    <option value="large">Large $5.50</option>
+                    <option value="extra-large">Extra Large $6.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="garlic-bread.jpg" alt="Garlic Bread">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="bread" value="garlic-bread"> Garlic Bread</label>
+                  <select class="item-size" data-item="garlic-bread">
+                    <option value="regular">Regular $4.00</option>
+                    <option value="large">Large $5.00</option>
+                    <option value="extra-large">Extra Large $6.00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Fried-Rice.jpg" alt="Fried Rice">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="bread" value="fried-rice"> Fried Rice</label>
+                  <select class="item-size" data-item="fried-rice">
+                    <option value="regular">Regular $6.50</option>
+                    <option value="large">Large $7.50</option>
+                    <option value="extra-large">Extra Large $8.50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-section">
+            <h4>Desserts</h4>
+            <div class="dish-options">
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="gulab-jamun.jpg" alt="Gulab Jamun">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="dessert" value="gulab-jamun"> Gulab Jamun</label>
+                  <select class="item-size" data-item="gulab-jamun">
+                    <option value="regular">Regular $6.00</option>
+                    <option value="large">Large $7.50</option>
+                    <option value="extra-large">Extra Large $9.00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Rasgulla.jpg" alt="Rasgulla">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="dessert" value="rasgulla"> Rasgulla</label>
+                  <select class="item-size" data-item="rasgulla">
+                    <option value="regular">Regular $6.50</option>
+                    <option value="large">Large $8.00</option>
+                    <option value="extra-large">Extra Large $9.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Brownie.jpeg" alt="Chocolate Brownie">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="dessert" value="chocolate-brownie"> Chocolate Brownie</label>
+                  <select class="item-size" data-item="chocolate-brownie">
+                    <option value="regular">Regular $5.50</option>
+                    <option value="large">Large $6.50</option>
+                    <option value="extra-large">Extra Large $7.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="ice-cream.jpg" alt="Ice Cream">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="dessert" value="ice-cream"> Ice Cream</label>
+                  <select class="item-size" data-item="ice-cream">
+                    <option value="regular">Regular $4.50</option>
+                    <option value="large">Large $5.50</option>
+                    <option value="extra-large">Extra Large $6.50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-section">
+            <h4>Beverages & Drinks</h4>
+            <div class="dish-options">
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="MangoLassi.jpg" alt="Mango Lassi">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="drink" value="mango-lassi"> Mango Lassi</label>
+                  <select class="item-size" data-item="mango-lassi">
+                    <option value="regular">Regular $5.00</option>
+                    <option value="large">Large $6.00</option>
+                    <option value="extra-large">Extra Large $7.00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="Masala-Chai.jpg" alt="Masala Chai">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="drink" value="masala-chai"> Masala Chai</label>
+                  <select class="item-size" data-item="masala-chai">
+                    <option value="regular">Regular $3.50</option>
+                    <option value="large">Large $4.50</option>
+                    <option value="extra-large">Extra Large $5.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="mojito.jpg" alt="Mojito">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="drink" value="mojito"> Mojito</label>
+                  <select class="item-size" data-item="mojito">
+                    <option value="regular">Regular $4.50</option>
+                    <option value="large">Large $5.50</option>
+                    <option value="extra-large">Extra Large $6.50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dish-item">
+                <div class="dish-image">
+                  <img src="coffee.jpeg" alt="Cold Coffee">
+                </div>
+                <div class="dish-info">
+                  <label><input type="checkbox" name="drink" value="cold-coffee"> Cold Coffee</label>
+                  <select class="item-size" data-item="cold-coffee">
+                    <option value="regular">Regular $6.00</option>
+                    <option value="large">Large $7.00</option>
+                    <option value="extra-large">Extra Large $8.00</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selection-step">
+        <h3>Step 3: Special Requests</h3>
+        <textarea id="special-requests" placeholder="Any dietary restrictions, allergies, or special preferences?"></textarea>
+      </div>
+
+      <div class="menu-actions">
+        <button class="cta-button" onclick="proceedToBooking()">Proceed to Booking</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; HiHa EXCLUSIVE DINER. All rights reserved.</p>
+  </footer>
+
+  <script src="alerts.js"></script>
+  <script>
+    // Show/hide size dropdowns based on checkbox state
+    document.querySelectorAll('.dish-info input[type="checkbox"]').forEach(function(checkbox) {
+      const sizeSelect = checkbox.closest('.dish-info').querySelector('.item-size');
+      // Initial state
+      sizeSelect.style.display = checkbox.checked ? 'inline-block' : 'none';
+      // Listen for changes
+      checkbox.addEventListener('change', function() {
+        sizeSelect.style.display = this.checked ? 'inline-block' : 'none';
+      });
+    });
+
+    function proceedToBooking() {
+      const chef = document.getElementById('chef-select').value;
+      const specialRequests = document.getElementById('special-requests').value;
+      // Get selected dishes with their sizes
+      const selectedDishesWithSizes = [];
+      document.querySelectorAll('input[type="checkbox"]:checked').forEach(checkbox => {
+        const itemName = checkbox.value;
+        const sizeSelect = document.querySelector(`select[data-item="${itemName}"]`);
+        const size = sizeSelect ? sizeSelect.value : 'regular';
+        selectedDishesWithSizes.push({
+          item: itemName,
+          size: size
+        });
+      });
+      if (!chef && selectedDishesWithSizes.length === 0) {
+        alert('Please select a chef and at least one food item.');
+        return;
+      }
+      if (!chef) {
+        alert('Please select a chef.');
+        return;
+      }
+      if (selectedDishesWithSizes.length === 0) {
+        alert('Please select at least one food item.');
+        return;
+      }
+      // Save to localStorage for booking page
+      localStorage.setItem('selectedChef', chef);
+      localStorage.setItem('specialRequests', specialRequests);
+      localStorage.setItem('selectedDishesWithSizes', JSON.stringify(selectedDishesWithSizes));
+      // Redirect to booking page
+      window.location.href = 'booking.html';
+    }
+  </script>
+</body>
+</html> 
